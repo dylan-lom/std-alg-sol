@@ -8,13 +8,13 @@ contract findDaysAndMonths {
 		dateString = bytes(DS);
 		return dateString;
 	}
-    uint datePos = 0;
-    uint monthPos = 2;
+	uint datePos = 0;
+	uint monthPos = 2;
 	uint yearPos = 4;
    
-    function getIndex(uint index) public view returns (bytes1) {
-        return dateString[index];
-    }
+	function getIndex(uint index) public view returns (bytes1) {
+		return dateString[index];
+	}
 	
     
 	
