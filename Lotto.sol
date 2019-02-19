@@ -6,4 +6,8 @@ contract Lotto {
     function random(uint range) public view returns (uint8) {
         return uint8(uint256(keccak256(abi.encodePacked(block.timestamp, block.difficulty)))%range);
     }
+    
+    function getTimestamp() public view returns (uint) {
+        return block.timestamp;
+    }
 }
